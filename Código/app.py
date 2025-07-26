@@ -1,22 +1,20 @@
 import streamlit as st
+from CargarData import Mostrar_Data
+from TransformacionData import Mostrar_transformacion
+from VisualizacionData import Mostrar_Visualizaciones
+from Mapa import Mostrar_Mapa
 
-from cargar_datos import show_data_tab
-from transformacion import show_transform_tab
-from visualizaciones import show_visualization_tab
 
 # Crear pestañas en el cuerpo de la aplicación
 tabs = st.tabs(["📥 Carga de Datos", "🔧 Transformación y Métricas", "📊 Visualizaciones", "🗺️ Mapa"])
 
 # Mostrar contenido en cada pestaña
 with tabs[0]:
-    show_data_tab()
-
+    Mostrar_Data()
 with tabs[1]:
-    show_transform_tab()
-
+    Mostrar_transformacion()
 with tabs[2]:
-    show_visualization_tab()
-
+    Mostrar_Visualizaciones()
 with tabs[3]:
-    st.subheader("🗺️ Mapa")
-    st.write("Aquí irá el contenido del mapa.")
+    Mostrar_Mapa()
+

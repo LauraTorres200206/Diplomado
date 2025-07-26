@@ -1,7 +1,7 @@
 import streamlit as st
-from carga_datos2 import Mostrar_Data
-from transformacion2 import Mostrar_transformacion
-from visualizaciones2 import Mostrar_Visualizaciones
+from CargarData import Mostrar_Data
+from TransformacionData import Mostrar_transformacion
+from VisualizacionData import Mostrar_Visualizaciones
 from Mapa import Mostrar_Mapa
 
 
